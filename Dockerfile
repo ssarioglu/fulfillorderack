@@ -25,14 +25,14 @@ COPY --from=builder /go/src/fulfillorderack .
 
 # Define environment variables
 # Application Insights
-ENV APPINSIGHTS_KEY=
-ENV CHALLENGEAPPINSIGHTS_KEY=
+ENV APPINSIGHTS_KEY="d746cb5a-364a-4923-8747-31eecc5d8201"
+ENV CHALLENGEAPPINSIGHTS_KEY="d746cb5a-364a-4923-8747-31eecc5d8201"
 
 # Challenge Logging
-ENV TEAMNAME=
+ENV TEAMNAME="ducker"
 
 # Mongo/Cosmos
-ENV MONGOURL=
+ENV MONGOURL="mongodb://root:4ORoKBh4cZDr9xJDL6Ks4bUz9biSsHenMZIBa9GSMtIUZ6Qok209CAlYmNvLKTr1mKN3JNlOipdsF46nDKeMvg==@root.documents.azure.com:10255/?ssl=true&replicaSet=globaldb"
 
 # Expose the application on port 8080
 EXPOSE 8080
